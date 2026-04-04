@@ -7,3 +7,12 @@ This form using fetch method is posting data into our DB ,then this data is show
 
 additional functions:(need more study)
 using graph to show our expenses/earning ratio (python lib???)
+
+
+Data Gathering 
+ID autonumeric
+Type
+number
+title
+to who
+either we will use XAMMP(boring) or c# .core Database Framework(better for study)
