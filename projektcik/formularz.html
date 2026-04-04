@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="formularz.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="head">
+        <div class="logo">Kacper Juszczuk</div>
+        <div class="back">Powrót</div>
+    </div>
+   <form id="formularz">
+<div class="placy">
+    <div class="f1">
+       <label id="form" for="rodzaj">podaj rodzaj wpisu</label>
+        <select name="rodzaj" id="form">
+            <option value="wydatek">Wydatek</option>
+            <option value="wpis">Wpis</option>
+        </select>
+
+        <input type="text" id="form" placeholder="podaj tu kwote">
+    </div>
+    <div class="f2">
+        <input type="text" id="form" itemid="i1" placeholder="podaj tytuł">
+        <input type="text" id="form" placeholder="do kogo">
+    </div>
+
+    <button type="submit" class="Btn" onclick="wyslij()">Submit</button>
+</div>
+</form>
+<script>
+     fetch({
+        method:'POST'
+        .then(res=res.json())
+        .then(data=>console.log(data))
+    });
+
+</script>
+</body>
+</html>
