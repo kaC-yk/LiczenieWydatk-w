@@ -4,13 +4,19 @@ import { usePathname, useRouter } from "next/navigation";
 import { Icon } from "@iconify/react";
 import style from "styled-jsx/style";
 
+
+export function Added({
+
+})
+
 export function ActiveLink({
   href,
   children,
 }: {
   href?: string;
   children?: React.ReactNode;
-}) {
+})
+ {
   const router = useRouter();
   const pathname = usePathname();
   const stylee = {
@@ -54,6 +60,13 @@ export default function Summary({
               {" "}
               <div>siema3</div>
             </div>
+                <div className="carousel-item w-full flex items-center justify-center">
+              {" "}
+              <div>siema4</div>
+            </div>
+      </div>
+      <div className="text-white-500 font-bold text-center h-full w-full">
+      <div classN>w3da</div>
       </div>
     </summary>
   );
