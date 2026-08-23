@@ -66,7 +66,7 @@ export default function Summary({
             </div>
       </div>
       <div className="text-white-500 font-bold text-center h-full w-full">
-      <div classN>w3da</div>
+      <div >w3da</div>
       </div>
     </summary>
   );
